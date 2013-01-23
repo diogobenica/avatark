@@ -1,0 +1,7 @@
+=Avatark
+
+
+Automatic avatar search in social networks and web.
+Avatark is a public API for open use. It searchs for an especific avatar in most famous social networks and returns the image link for you.
+
+You give us a nickname, and Avatark returns to you an avatar!
