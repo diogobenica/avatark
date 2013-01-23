@@ -1,4 +1,5 @@
 Avatark::Application.routes.draw do
+  match 'avatar/index' => 'avatar#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
