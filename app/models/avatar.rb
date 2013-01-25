@@ -10,7 +10,7 @@ class Avatar
 
   def twitter
   	self.class.base_uri TWITTER_DOMAIN
-  	response = get_image "users/profile_image/#{@username}?size=original&redirect=false"
+  	response = get_image "/users/profile_image/#{@username}?size=original&redirect=false"
     JSON.parse(response.parsed_response.to_json)["profile_image_url"]
   end
 

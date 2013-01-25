@@ -12,7 +12,7 @@ gem 'httparty'
 group :development, :test do
   gem 'rspec-rails', '>= 2.11.1'
   gem 'capybara', '>= 2.0.2'
-  gem "ruby-debug19"
+  #gem "ruby-debug19"
 end
 
 gem 'jquery-rails'
@@ -30,4 +30,4 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'debugger'
+gem 'debugger'
