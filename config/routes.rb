@@ -1,6 +1,6 @@
 Avatark::Application.routes.draw do
-  match 'avatar/facebook' => 'avatar#facebook'
-  match 'avatar/twitter' => 'avatar#twitter'
+  match 'facebook' => 'avatar#facebook'
+  match 'twitter' => 'avatar#twitter'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
