@@ -3,20 +3,28 @@ class AvatarController < ApplicationController
 
   before_filter :new_avatar
 
+  def auto
+    [:facebook, :twitter].each do |origin|
+      @image = @avatar.send origin
+      break unless @image[:origin] == 'default'
+    end
+    respond_with @image
+  end
+
   def facebook
-    @image_url[:avatar] = @avatar.facebook
-    respond_with @image_url
+    @image = @avatar.facebook
+    respond_with @image
   end
 
   def twitter
-    @image_url[:avatar] = @avatar.twitter
-    respond_with @image_url
+    @image = @avatar.twitter
+    respond_with @image
   end
 
   private
 
   def new_avatar
   	@avatar = Avatar.new params[:username]
-  	@image_url = {}
+  	@image = {}
   end
 end

@@ -1,4 +1,6 @@
 Avatark::Application.routes.draw do
+  root :to => 'avatar#auto'
+  match 'auto' => 'avatar#auto'
   match 'facebook' => 'avatar#facebook'
   match 'twitter' => 'avatar#twitter'
   # The priority is based upon order of creation:
