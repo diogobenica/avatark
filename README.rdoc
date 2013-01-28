@@ -11,7 +11,7 @@ You give us a nickname, and Avatark returns to you an avatar!
 For now, the only `content-type` accepted is `application/json`, so make sure that your request have this header.
 
 ### Auto"magic"
-By default, Avatark search an avatar for your user in many social networks (ok, it's just Facebook and Twitter for now). The fallback works that way:
+By default, Avatark search an avatar for your user in many social networks (ok, it's just Facebook and Twitter for now). The fallback works this way:
 
 ```
     Exists in Facebook? --(no)--> Exists in Twitter? --(no)--> Returns an default avatar
