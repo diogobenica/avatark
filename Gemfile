@@ -10,13 +10,13 @@ gem 'httparty'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
-  gem 'rspec-rails', '>= 2.11.1'
-  gem 'capybara', '>= 2.0.2'
-  #gem "ruby-debug19"
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'debugger'
 end
 
 group :production do
-  gem 'pg', '0.12.2'
+  gem 'pg'
 end
 
 gem 'jquery-rails'
@@ -34,4 +34,3 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-gem 'debugger'
