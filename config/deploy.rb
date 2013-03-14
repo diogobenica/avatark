@@ -1,4 +1,5 @@
-require 'bundler/capistrano'
+require "rvm/capistrano"
+require "bundler/capistrano"
 
 set :application, "avatark"
 set :scm, :git
@@ -19,6 +20,8 @@ set :ssh_options, { :forward_agent => true }
 
 set :bundle_dir, ""
 set :bundle_flags, ""
+
+set :rvm_type, :system
 
 # if you want to clean up old releases on each deploy uncomment this:
 # after "deploy:restart", "deploy:cleanup"

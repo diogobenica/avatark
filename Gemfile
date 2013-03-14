@@ -8,15 +8,12 @@ gem 'rails', '3.2.11'
 gem 'nokogiri'
 gem 'httparty'
 
+gem 'sqlite3', '1.3.5'
+
 group :development, :test do
-  gem 'sqlite3', '1.3.5'
   gem 'rspec-rails'
   gem 'capybara'
   gem 'debugger'
-end
-
-group :production do
-  gem 'pg'
 end
 
 gem 'jquery-rails'
