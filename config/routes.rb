@@ -1,8 +1,9 @@
 Avatark::Application.routes.draw do
-  root :to => 'avatar#auto'
-  match 'auto' => 'avatar#auto'
-  match 'facebook' => 'avatar#facebook'
-  match 'twitter' => 'avatar#twitter'
+  #root :to => 'avatar#auto', :defaults => { :format => "json" }
+  match '/:username' => 'avatar#auto', :defaults => { :format => "json" }
+  match 'auto/:username' => 'avatar#auto', :defaults => { :format => "json" }
+  match 'facebook/:username' => 'avatar#facebook', :defaults => { :format => "json" }
+  match 'twitter/:username' => 'avatar#twitter', :defaults => { :format => "json" }
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
